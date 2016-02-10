@@ -22,11 +22,14 @@ theme_bare <- function() {
 plot_anscombe <- function(x, y) {
   p <- ggplot(anscombe, aes(get(x), get(y)))
   a <- p + geom_point(colour = "white", size = 1) + 
-            geom_smooth(method  = 'lm',
-                        se      = FALSE,
-                        colour  = "white",
-                        size    = 0.5,
-                        formula = y ~ x)            +
+            geom_smooth(method   = 'lm',
+                        se       = FALSE,
+                        colour   = "white",
+                        linetype = "solid",
+                        size     = 0.5,
+                        formula  = y ~ x)         +
+            xlim(3, 19)                           +
+            ylim(3, 13)                           +
             theme_bare()
   a
 }
