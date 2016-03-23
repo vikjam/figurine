@@ -44,5 +44,5 @@ bubble.plot <- p + geom_area(fill = "#A31F34")                   +
                    theme_bare()
 
 # Export
-ggsave(bubble.plot, file = "bubble_plot.pdf", height = 2.16, width  = 3.66)
+ggsave(bubble.plot, file = "house-bubble.pdf", height = 2.16, width  = 3.66)
 
