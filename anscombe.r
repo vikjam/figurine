@@ -15,7 +15,7 @@ theme_bare <- function() {
   panel.border     = element_blank(),
   panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),
-  plot.background  = element_rect(fill = "#A31F34"))
+  plot.background  = element_rect(fill = "#006A96"))
 }
 
 # Create function to plot

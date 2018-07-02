@@ -15,7 +15,7 @@ theme_bare <- function() {
     panel.border     = element_blank(),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
-    plot.background  = element_rect(fill = "black"))
+    plot.background  = element_rect(fill = "#182B49"))
 }
 
 # Download housing and rent data from FRED, then merge results
@@ -39,7 +39,7 @@ bubble.df$pr.ratio <- bubble.df$pr.ratio / scaling.factor
 ylims       <- c(floor(min(bubble.df$pr.ratio) * 10) / 10, 
                  ceiling(max(bubble.df$pr.ratio) * 10) / 10)
 p           <- ggplot(bubble.df, aes(x = date, y = pr.ratio))
-bubble.plot <- p + geom_area(fill = "#A31F34")                   +
+bubble.plot <- p + geom_area(fill = "#006A96")                   +
                    coord_cartesian(ylim = ylims, expand = FALSE) +
                    theme_bare()
 

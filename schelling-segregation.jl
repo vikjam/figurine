@@ -46,11 +46,11 @@ function draw_agents(agents)
     plot(layer(x = df[df[:color] .== 0, :x],
         	   y = df[df[:color] .== 0, :y],
         	   Geom.point,
-               Theme(default_color = colorant"#A31F34")),
+               Theme(default_color = colorant"#C69214")),
          layer(x = df[df[:color] .== 1, :x],
                y = df[df[:color] .== 1, :y],
                Geom.point,
-               Theme(default_color = colorant"#191919")),
+               Theme(default_color = colorant"#182B49")),
         	   Guide.xticks(ticks = nothing),
         	   Guide.yticks(ticks = nothing),
         	   Guide.xlabel(""),
@@ -71,5 +71,3 @@ end
 
 schelling_plot = draw_agents(agents)
 draw(PDF("schelling-segregation.pdf", 3.66inch, 2.16inch), schelling_plot)
-
-
