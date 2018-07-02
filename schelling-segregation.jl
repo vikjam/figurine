@@ -46,7 +46,11 @@ function draw_agents(agents)
     plot(layer(x = df[df[:color] .== 0, :x],
         	   y = df[df[:color] .== 0, :y],
         	   Geom.point,
+<<<<<<< Updated upstream
                Theme(default_color = colorant"#C69214")),
+=======
+               Theme(default_color = colorant"#006A96")),
+>>>>>>> Stashed changes
          layer(x = df[df[:color] .== 1, :x],
                y = df[df[:color] .== 1, :y],
                Geom.point,

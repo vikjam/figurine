@@ -5,9 +5,14 @@ number <- 2000
 group  <- c(rep(0, (51 * 51) - number), rep(1, number / 2), rep(2, number / 2))
 grid   <- matrix(sample(group, 2601, replace = FALSE), ncol = 51)
 
+<<<<<<< Updated upstream
 # par(mar = c(0, 0, 0, 0))
 
 # image(grid, col = c("#00C6D7", "#006A96", "#182B49"), axes = FALSE)
+=======
+par(mar = c(0, 0, 0, 0))
+image(grid, col = c("#00C6D7", "#006A96", "#182B49"), axes = FALSE)
+>>>>>>> Stashed changes
 
 alike_preference  <- 0.60
 happiness_tracker <- c()
@@ -26,6 +31,7 @@ get_neighbors <- function(p) {
     return(neighbors)
 }
 
+<<<<<<< Updated upstream
 for(t in c(1:1000)) {
   happy_cells   <- c()
   unhappy_cells <- c()
@@ -89,3 +95,9 @@ for (i in rand) {
 pdf('schelling-segregation-R.pdf', height = 2.16, width = 3.66)
 image(grid, col = c("#00C6D7", "#006A96", "#182B49"), axes = FALSE)
 dev.off()
+=======
+for (t in c(1:1000)) {
+  happy_cells   <- c()
+  unhappy_cells <- c() 
+}
+>>>>>>> Stashed changes
